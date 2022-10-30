@@ -2,6 +2,7 @@
 import { useRef, useState } from "react";
 // @ts-ignore
 import Flippy, { FrontSide, BackSide } from "react-flippy";
+// @ts-ignore
 import CardAnimated from 'react-animated-3d-card'
 import { spring } from "react-motion";
 
