@@ -38,7 +38,7 @@ export function Card(props: Props) {
 	let springRotateDeltaY = spring(0, springD);
 	let springScale = spring(1, springD);
 
-  const activate = (e) => {
+  const activate = (e:any) => {
 		const isTouch = e.pointerType === "touch";
 		if ( !isTouch && activeCard) {
 			// deactive if already active
@@ -94,7 +94,7 @@ export function Card(props: Props) {
 		"--hyp": `${ Math.sqrt( (springGlareY.val-50) * (springGlareY.val-50) +  (springGlareX.val-50) * (springGlareX.val-50) ) / 50}`
     }
     
-    var r = document.querySelector(':root');
+    var r = document.querySelector<HTMLElement>(':root');
     for (var [key, value] of Object.entries(stylePersonalize)) {
       r?.style?.setProperty(key, value) ;
     }
@@ -102,8 +102,8 @@ export function Card(props: Props) {
 	};
 
   const resetOpacity = () => {
-    var r = document.querySelector(':root');
-    r?.style.setProperty("--o",  0.02) ;
+    var r = document.querySelector<HTMLElement>(':root');
+    r?.style.setProperty("--o",  '0.02') ;
     setActiveCard(false)
   }
 
