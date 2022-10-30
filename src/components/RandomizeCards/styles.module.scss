@@ -1,0 +1,41 @@
+.ContainerCards {
+  display: flex;
+  gap: 32px;
+}
+.CardContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: var(--font);
+  height: 200px;
+  width: 150px;
+  background-color: var(--red);
+  gap: 8px;
+  padding: 16px;
+}
+.DevName{
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gray-6);
+  border-radius: var(--border-radius);
+  padding: 8px;
+  border: 1px solid var(--gray-3);
+  width: 100%;
+  text-align: center;
+}
+.DevImg{
+  height: 100px;
+  width: 100px;
+  img{
+    border-radius: var(--border-radius);
+    border: 1px solid var(--gray-3);
+    height: 100px;
+    width: 100px;
+  }
+}
+.DevRole{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray-3);
+}

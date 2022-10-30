@@ -1,7 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
 import { useState } from "react";
+import { LoadingBirl } from "../LoadingBirl";
+import { RandomizeCards } from "../RandomizeCards";
+import styles from "./styles.module.scss";
 
-export default function App() {
+export function Randomize() {
   const [randomized, setRandomized] = useState<string[]>([]);
+  const [showDevCards, setShowDevCards] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
   const startingList: string[] = [
     "Kayn3n",
@@ -14,12 +19,6 @@ export default function App() {
   const [devs, setDevs] = useState<string[]>(startingList);
   const shuffleRounds = 13;
 
-  const gifArray = [
-    "https://i.makeagif.com/media/5-04-2016/RCXmaq.gif",
-    "https://thumbs.gfycat.com/GiganticAdmiredJohndory-size_restricted.gif",
-    "https://www.ignboards.com/attachments/ezsykr-gif.381289/"
-  ];
-
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setDevs(e.currentTarget.value.split("\n"));
   };
@@ -28,6 +27,7 @@ export default function App() {
     const devlist = startingList.join("\n");
     return (
       <textarea
+        className={styles.randomizeTextarea}
         defaultValue={devlist}
         onChange={(e) => handleChange(e)}
         rows={8}
@@ -36,11 +36,6 @@ export default function App() {
   };
 
   const shuffleDevs = (): void => {
-    const checkboxes = document.getElementsByClassName("List__Checkbox");
-    for (let i = 0; i < checkboxes.length; i++) {
-      const checkbox = checkboxes[i] as HTMLInputElement;
-      checkbox.checked = false;
-    }
     setLoading(true);
 
     setTimeout(() => {
@@ -58,59 +53,68 @@ export default function App() {
       console.log("Para fins de auditoria");
       setRandomized(newDevs);
       setLoading(false);
-    }, 5000);
+    }, 2500);
   };
 
   const listDevs = (devsArray: string[], check?: boolean): JSX.Element => (
     <>
       {devsArray.map((dev) => (
-        <div key={dev} className="List__Items">
+        <div key={dev} className={styles.ListItems}>
           {check && (
-            <input className="List__Checkbox" id="checkbox" type="checkbox" />
+            <input className={styles.ListCheckbox} id="checkbox" type="checkbox" />
           )}
-          <span className="List__Devname">{dev}</span>
+          <span className={styles.ListDevname}>{dev}</span>
         </div>
       ))}
     </>
   );
 
   return (
-    <main className="App">
-      <div className="Container">
+    <main>
+      <div className={styles.Container}>
         <a href="https://www.gsuplementos.com.br/">
           <img
             alt="Big coin icon"
-            className="TopImage"
+            className={styles.TopImage}
             src="https://www.gsuplementos.com.br/tema/growth/img/pagina/link-rapido/logo.svg"
           />
         </a>
-        <span className="Title">Growth Random Bolado</span>
-        <section className="List__Container">
+        <span className={styles.Title}>Growth Random Bolado</span>
+        <section className={styles.ListContainer}>
           {loading ? (
-            <>
-              <img
-                className="loading"
-                alt="birl"
-                src={gifArray[Math.floor(Math.random() * gifArray.length)]}
-              />
-            </>
+            <LoadingBirl />
           ) : (
             <>
-              <div className="List">
-                <span className="List__Title">Starting list</span>
+              <div className={styles.List}>
+                <span  className={styles.ListTitle}>Starting list</span>
                 {returnTextArea()}
               </div>
 
-              <div className="List">
-                <span className="List__Title">Random sem choro</span>
+              <div  className={styles.List}>
+                <span  className={styles.ListTitle}>Random sem choro</span>
                 {!!randomized.length && listDevs(randomized, true)}
+                {!!randomized.length && 
+                  <button onClick={ () => setShowDevCards(!showDevCards)} className={styles.ButtonRandomize}>Mostra os cards</button>
+                }
               </div>
             </>
           )}
         </section>
+
+        {showDevCards &&
+          <div className={styles.ContainerCards}
+         >
+            <button className={styles.CloseButton}
+            onClick={ () => setShowDevCards(false)}>
+              X
+            </button>
+            <RandomizeCards listDevs={randomized} />
+          </div>
+        }
+
         <button
-          className="Button__Randomize"
-          onClick={(): void => shuffleDevs()}
+           className={styles.ButtonRandomize}
+            onClick={(): void => shuffleDevs()}
         >
           Birl{!!randomized.length && " again"}!
         </button>
