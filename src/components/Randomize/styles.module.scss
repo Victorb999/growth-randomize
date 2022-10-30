@@ -1,0 +1,158 @@
+.App {
+  position: relative;
+}
+
+.TopImage {
+  height: 50px;
+  margin-bottom: 32px;
+}
+
+.Container {
+  padding: 32px;
+  background-color: var(--gray-7);
+  min-width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.Title {
+  font-family: var(--font);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 900;
+  color: var(--white);
+  z-index: 2;
+}
+
+.ListContainer {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+  font-size: 1rem;
+  width: 100%;
+  min-height: 300px;
+}
+
+.ListTitle {
+  text-transform: uppercase;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.List {
+  display: flex;
+  flex-basis: 50%;
+  flex-grow: 0;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+@keyframes learn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ListItems {
+  margin: 4px 0;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
+  animation-name: learn;
+  animation-duration: 5s;
+}
+
+.ListSeparator {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  border-left: 1px solid var(--gray-3);
+}
+
+.ListCheckbox {
+  margin-right: 8px;
+  padding: 18px;
+}
+
+.ListCheckbox:checked + .ListDevname {
+  text-decoration: line-through;
+  color: var(--gray-3);
+}
+
+.ButtonRandomize {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 6px 0;
+  background: var( --degrade);
+  border: none;
+  border-radius: 4px;
+
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 900;
+  min-height: 50px;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 2s ease-in;
+  }
+}
+
+
+.loading {
+  transition: 2s ease-in;
+  margin: auto;
+}
+
+.randomizeTextarea {
+  width: 80%;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background: var(--gray-6);
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding: 8px;
+}
+
+.ContainerCards {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0 0 0 / 72%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  z-index: 99;
+}
+.CloseButton{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  background: transparent;
+  font-family: var(--font);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--gray-2);
+  &:hover{
+    font-size: 2.15rem;
+    color: var(--gray-1);
+  }
+}
