@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRef, useState } from "react";
+// @ts-ignore
 import Flippy, { FrontSide, BackSide } from "react-flippy";
 import CardAnimated from 'react-animated-3d-card'
 import { spring } from "react-motion";
