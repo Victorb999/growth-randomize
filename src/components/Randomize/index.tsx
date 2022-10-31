@@ -14,7 +14,7 @@ export function Randomize() {
     "Carbon",
     "Ruds",
     "Marchena",
-    "Vitu"
+    "Vitu",
   ];
   const [devs, setDevs] = useState<string[]>(startingList);
   const shuffleRounds = 13;
@@ -61,7 +61,11 @@ export function Randomize() {
       {devsArray.map((dev) => (
         <div key={dev} className={styles.ListItems}>
           {check && (
-            <input className={styles.ListCheckbox} id="checkbox" type="checkbox" />
+            <input
+              className={styles.ListCheckbox}
+              id="checkbox"
+              type="checkbox"
+            />
           )}
           <span className={styles.ListDevname}>{dev}</span>
         </div>
@@ -86,35 +90,41 @@ export function Randomize() {
           ) : (
             <>
               <div className={styles.List}>
-                <span  className={styles.ListTitle}>Starting list</span>
+                <span className={styles.ListTitle}>Starting list</span>
                 {returnTextArea()}
               </div>
 
-              <div  className={styles.List}>
-                <span  className={styles.ListTitle}>Random sem choro</span>
+              <div className={styles.List}>
+                <span className={styles.ListTitle}>Random sem choro</span>
                 {!!randomized.length && listDevs(randomized, true)}
-                {!!randomized.length && 
-                  <button onClick={ () => setShowDevCards(!showDevCards)} className={styles.ButtonRandomize}>Mostra os cards</button>
-                }
+                {!!randomized.length && (
+                  <button
+                    onClick={() => setShowDevCards(!showDevCards)}
+                    className={styles.ButtonRandomize}
+                  >
+                    Mostrar os cards
+                  </button>
+                )}
               </div>
             </>
           )}
         </section>
 
-        {showDevCards &&
-          <div className={styles.ContainerCards}
-         >
-            <button className={styles.CloseButton}
-            onClick={ () => setShowDevCards(false)}>
+        {showDevCards && (
+          <div className={styles.ContainerCards}>
+            <button
+              className={styles.CloseButton}
+              onClick={() => setShowDevCards(false)}
+            >
               X
             </button>
             <RandomizeCards listDevs={randomized} />
           </div>
-        }
+        )}
 
         <button
-           className={styles.ButtonRandomize}
-            onClick={(): void => shuffleDevs()}
+          className={styles.ButtonRandomize}
+          onClick={(): void => shuffleDevs()}
         >
           Birl{!!randomized.length && " again"}!
         </button>
