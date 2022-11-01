@@ -16,6 +16,10 @@
   align-items: center;
   flex-direction: column;
   border-radius: 4px;
+  @media (max-width: 600px) {
+    min-width: 300px;
+    width: 100%;
+  } 
 }
 
 .Title {
@@ -111,12 +115,6 @@
   }
 }
 
-
-.loading {
-  transition: 2s ease-in;
-  margin: auto;
-}
-
 .randomizeTextarea {
   width: 80%;
   border: none;
@@ -151,8 +149,13 @@
   font-size: 2rem;
   font-weight: 500;
   color: var(--gray-2);
+  z-index: 999;
   &:hover{
     font-size: 2.15rem;
     color: var(--gray-1);
+  }
+  @media (max-width: 600px) {
+    top: 1%;
+    right: 1%;
   }
 }
