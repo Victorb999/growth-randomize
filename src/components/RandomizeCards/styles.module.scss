@@ -1,6 +1,13 @@
 .ContainerCards {
   display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
   gap: 32px;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 600px) {
+    gap: 16px;
+  }
 }
 .CardContent {
   display: flex;
@@ -10,18 +17,18 @@
   font-family: var(--font);
   height: 200px;
   width: 150px;
-  background-color: var(--red);
   gap: 8px;
   padding: 16px;
+  border: 5px solid var(--gray-7);
 }
 .DevName{
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--gray-6);
   border-radius: var(--border-radius);
-  padding: 8px;
+  padding: 8px 0;
   border: 1px solid var(--gray-3);
-  width: 100%;
+  width: 100px;
   text-align: center;
 }
 .DevImg{
