@@ -126,7 +126,7 @@ export function Randomize() {
           className={styles.ButtonRandomize}
           onClick={(): void => shuffleDevs()}
         >
-          Birl{!!randomized.length && " again"}!
+          Vai CAVALO !! {!!randomized.length && " again"}!
         </button>
       </div>
     </main>
