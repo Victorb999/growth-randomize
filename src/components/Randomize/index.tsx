@@ -83,7 +83,7 @@ export function Randomize() {
             src="https://www.gsuplementos.com.br/tema/growth/img/pagina/link-rapido/logo.svg"
           />
         </a>
-        <span className={styles.Title}>Growth Random Bolado</span>
+        <span className={styles.Title}>WAR Growth Random</span>
         <section className={styles.ListContainer}>
           {loading ? (
             <LoadingBirl />
@@ -126,7 +126,7 @@ export function Randomize() {
           className={styles.ButtonRandomize}
           onClick={(): void => shuffleDevs()}
         >
-          Vai CAVALO !! {!!randomized.length && " again"}!
+          THIS IS WAR !! {!!randomized.length && " again"}!
         </button>
       </div>
     </main>
