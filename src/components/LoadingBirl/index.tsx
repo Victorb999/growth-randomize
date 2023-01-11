@@ -3,9 +3,10 @@ import styles from "./styles.module.scss";
 
 export function LoadingBirl() {
   const gifArray = [
-    "https://gifs.eco.br/wp-content/uploads/2021/10/imagens-e-gifs-de-futebol-2.gif",
-    "https://gifs.eco.br/wp-content/uploads/2021/10/imagens-e-gifs-de-futebol-7.gif",
-    "https://media.tenor.com/MqTJ8o4dUTwAAAAM/neymar-jr.gif",
+    "https://media.tenor.com/Q_Tbu1YSl4kAAAAM/trisha-paytas.gif",
+    "https://media.tenor.com/dL0_1CoB1BwAAAAC/war-war-calls.gif",
+    "https://media.tenor.com/gAZOAL1Dh04AAAAC/guerra-war.gif",
+    "https://media.tenor.com/Bx8KFoS-7McAAAAC/this-is-war-war.gif",
   ];
 
   return (
