@@ -12,37 +12,39 @@
 .CardContent {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   font-family: var(--font);
   height: 200px;
   width: 150px;
   gap: 8px;
-  padding: 16px;
-  border: 5px solid var(--secondary);
+  border: 5px solid var(--primary);
 }
 .DevName{
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--tertiary);
-  border-radius: var(--border-radius);
-  padding: 8px 0;
-  border: 1px solid var(--tertiary);
   width: 100px;
   text-align: center;
+  padding-top: 16px;
 }
 .DevImg{
   height: 100px;
   width: 100px;
+  padding-top: 16px;
   img{
-    border-radius: var(--border-radius);
-    border: 1px solid var(--tertiary);
+    border-radius: 50%;
+    border: 2px solid var(--tertiary);
     height: 100px;
     width: 100px;
   }
 }
 .DevRole{
   font-size: 1rem;
-  font-weight: 500;
-  color: var(--tertiary);
+  font-weight: 400;
+  color: var(--red);
+  background:  var(--degrade-2);
+  padding: 12px;
+  width: 100%;
+  text-align:center;
 }
