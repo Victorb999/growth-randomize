@@ -8,13 +8,8 @@
   --white: #fff;
   --black: #000;
 
-  --gray-1: #fffffa;
-  --gray-2: #ccc9dc;
-  --gray-3: #d6d6b1;
-  --gray-4: #666666;
-  --gray-5: #333333;
-  --gray-6: #878472;
-  --gray-7: #494331;
+  --gray-1: #fafafa;
+  --gray-2: #666666;
 
   --green: #85ffc7;
   --orange: #ff8552;
@@ -22,10 +17,17 @@
   --blue-1: #23c9ff;
   --blue-2: #20a4f3;
 
-  --primary: #3F3F37;
-  --secondary: #D6D6B1;
+// para trocar tema trocar essas cores e imagem
+// ********************************************
+  --primary: #131313;
+  --secondary: #525252;
+  --tertiary: #929292;
+  
+  --image-background: url("https://preview.redd.it/cl63ifry63s31.jpg?auto=webp&s=3483341f3d036142a623f0fc89614abf3cf9e12b");
 
-  --degrade: linear-gradient(90deg, #ff8552 0%, #DE541E 100%);
+  --degrade: linear-gradient(90deg, #232323 0%, #323232 100%);
+// fim do bloco de trocar de tema
+// ********************************************
 
   --shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 
@@ -66,9 +68,9 @@ button {
   font: 500 1rem var(--font-2);
 }
 body{
-  background-color: var(--gray-6);
+  background-color: var(--tertiary);
   color: var(--gray-1);
-  background: url("https://image.api.playstation.com/vulcan/ap/rnd/202208/0915/LYuZHHfQIixoRrMQUtoXJaXa.jpg");
+  background: var(--image-background);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 24px;

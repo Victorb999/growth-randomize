@@ -73,6 +73,9 @@ export function Randomize() {
     </>
   );
 
+  const TITLE_CONTAINER = "WAR Growth Random";
+  const BUTTON_LABEL = "This is war";
+
   return (
     <main>
       <div className={styles.Container}>
@@ -83,14 +86,14 @@ export function Randomize() {
             src="https://www.gsuplementos.com.br/tema/growth/img/pagina/link-rapido/logo.svg"
           />
         </a>
-        <span className={styles.Title}>WAR Growth Random</span>
+        <span className={styles.Title}>{TITLE_CONTAINER}</span>
         <section className={styles.ListContainer}>
           {loading ? (
             <LoadingBirl />
           ) : (
             <>
               <div className={styles.List}>
-                <span className={styles.ListTitle}>Starting list</span>
+                <span className={styles.ListTitle}>Lista inicial</span>
                 {returnTextArea()}
               </div>
 
@@ -126,7 +129,7 @@ export function Randomize() {
           className={styles.ButtonRandomize}
           onClick={(): void => shuffleDevs()}
         >
-          THIS IS WAR !! {!!randomized.length && " again"}!
+          {BUTTON_LABEL} {!!randomized.length && " again"}!
         </button>
       </div>
     </main>
