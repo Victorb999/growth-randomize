@@ -73,8 +73,8 @@ export function Randomize() {
     </>
   );
 
-  const TITLE_CONTAINER = "WAR Growth Random";
-  const BUTTON_LABEL = "This is war";
+  const TITLE_CONTAINER = "Revenue randomizer";
+  const BUTTON_LABEL = "BIRLL";
 
   return (
     <main>
