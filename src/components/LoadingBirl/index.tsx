@@ -3,10 +3,10 @@ import styles from "./styles.module.scss";
 
 export function LoadingBirl() {
   const gifArray = [
-    "https://media.tenor.com/Q_Tbu1YSl4kAAAAM/trisha-paytas.gif",
-    "https://media.tenor.com/dL0_1CoB1BwAAAAC/war-war-calls.gif",
-    "https://media.tenor.com/gAZOAL1Dh04AAAAC/guerra-war.gif",
-    "https://media.tenor.com/Bx8KFoS-7McAAAAC/this-is-war-war.gif",
+    "https://media.tenor.com/qJaXbitGfJMAAAAC/meme-patrick-star.gif",
+    "https://media.tenor.com/emUvpBHlOW0AAAAC/beet-complete-task.gif",
+    "https://media.tenor.com/PgfvhIRWfrAAAAAd/jim-carrey-yes-sir.gif",
+    "https://media.tenor.com/RAs4QxelrnQAAAAM/tasks.gif",
   ];
 
   return (

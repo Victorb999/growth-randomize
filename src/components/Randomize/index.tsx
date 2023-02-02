@@ -53,7 +53,7 @@ export function Randomize() {
       console.log("Para fins de auditoria");
       setRandomized(newDevs);
       setLoading(false);
-    }, 2500);
+    }, 3500);
   };
 
   const listDevs = (devsArray: string[], check?: boolean): JSX.Element => (
