@@ -17,18 +17,18 @@
   --blue-1: #23c9ff;
   --blue-2: #20a4f3;
 
-// para trocar tema trocar essas cores e imagem
-// ********************************************
-  --primary: #1f1f1f;
-  --secondary: #1a1a1a;
-  --tertiary: #292929;
-  
-  --image-background: url("https://img.freepik.com/free-photo/empty-dark-room-modern-futuristic-sci-fi-background-3d-illustration_35913-2340.jpg?w=1380&t=st=1674673113~exp=1674673713~hmac=8d848c43f3ab86d16815dc02279d75f027b2b0b9b7a148a9cd4e4ac364117906");
+  // para trocar tema trocar essas cores e imagem
+  // ********************************************
+  --primary: #21c7c2;
+  --secondary: #1d1628;
+  --tertiary: #da5c88;
 
-  --degrade: linear-gradient(90deg, #FF4656 0%, #ba303c 100%);
-  --degrade-2: linear-gradient(90deg, #1a1a1a 0%, #292929 100%);
-// fim do bloco de trocar de tema
-// ********************************************
+  --image-background: url("https://s2.glbimg.com/uMg_t8wCZkOpMB31qAZjlHN8BJU=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2021/w/l/0LsDYLRHSfhhS5o7dE0Q/carnaval-serpentina-pixabay.jpg");
+
+  --degrade: linear-gradient(90deg, #432371 0%, #714674 100%);
+  --degrade-2: linear-gradient(90deg, #fb76c1 0%, #ff51eb 100%);
+  // fim do bloco de trocar de tema
+  // ********************************************
 
   --shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 
@@ -68,10 +68,10 @@ textarea,
 button {
   font: 500 1rem var(--font-2);
 }
-body{
+body {
   background-color: var(--tertiary);
   color: var(--gray-1);
-  background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)),var(--image-background);
+  background: var(--image-background);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -93,7 +93,7 @@ h5 {
   font-weight: 500;
   font-family: var(--font-1);
   color: var(--gray-1);
-  letter-spacing: 0.1rem
+  letter-spacing: 0.1rem;
 }
 h1 {
   font-size: 2rem;
@@ -107,9 +107,9 @@ button {
   padding: 4px;
   border-radius: var(--border-radius);
 }
-.red{
+.red {
   color: var(--red);
 }
-.green{
-  color:var(--green);
+.green {
+  color: var(--green);
 }
