@@ -8,14 +8,7 @@ export function Randomize() {
   const [randomized, setRandomized] = useState<string[]>([]);
   const [showDevCards, setShowDevCards] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
-  const startingList: string[] = [
-    "Kayn3n",
-    "Tony",
-    "Carbon",
-    "Ruds",
-    "Marchena",
-    "Vitu",
-  ];
+  const startingList: string[] = ["Kayn3n", "Tony", "Carbon", "Ruds", "Vitu"];
   const [devs, setDevs] = useState<string[]>(startingList);
   const shuffleRounds = 13;
 

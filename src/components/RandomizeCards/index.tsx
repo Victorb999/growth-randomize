@@ -32,12 +32,6 @@ const devsData: any = {
     img: "https://ca.slack-edge.com/T019HJHM7SB-U027PSK5G6A-c1cb1125bc77-512",
     color: "linear-gradient(90deg, #EDC92B 0%, #EDE342 100%)",
   },
-  Marchena: {
-    name: "Marchena",
-    role: "frontend",
-    img: "https://ca.slack-edge.com/T019HJHM7SB-U02NKC3HL65-be7fde7d59d9-512",
-    color: "linear-gradient(90deg, #EDC92B 0%, #EDE342 100%)",
-  },
   Vitu: {
     name: "Vitu",
     role: "frontend",
