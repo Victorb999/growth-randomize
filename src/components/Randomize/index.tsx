@@ -66,8 +66,8 @@ export function Randomize() {
     </>
   );
 
-  const TITLE_CONTAINER = "Revenue Carnaval randomizer";
-  const BUTTON_LABEL = "SAMBA ISSO AI";
+  const TITLE_CONTAINER = "Sadness and sorrow randomizer";
+  const BUTTON_LABEL = "tururu";
 
   return (
     <main>
