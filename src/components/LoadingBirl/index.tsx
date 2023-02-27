@@ -3,10 +3,11 @@ import styles from "./styles.module.scss";
 
 export function LoadingBirl() {
   const gifArray = [
-    "https://media.tenor.com/vIUb_quqN-sAAAAd/dance-boyfriend.gif",
-    "https://media.tenor.com/6luTwcJhyTEAAAAM/porto-da-pedra-carnaval.gif",
-    "https://media.tenor.com/9DMdw1-Ky5cAAAAC/carnival-party.gif",
-    "https://media.tenor.com/2dZZK8ijaXMAAAAC/the-mask-carnaval.gif",
+    "https://media.tenor.com/h2b3FKraS3EAAAAC/anime-naruto.gif",
+    "https://media.tenor.com/vcancYPIgOMAAAAC/sad-cry.gif",
+    "https://media.tenor.com/mPwhjlfyO90AAAAC/alone-free.gif",
+    "https://media.tenor.com/a0vaEVOY-30AAAAM/naruto-narutouzumaki.gif",
+    "https://media.tenor.com/gPbkAifeXnkAAAAM/naruto-sad.gif",
   ];
 
   return (
