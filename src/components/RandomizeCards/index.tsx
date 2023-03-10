@@ -38,6 +38,24 @@ const devsData: any = {
     img: "https://ca.slack-edge.com/T019HJHM7SB-U02M7J5HN0G-2ef7835251b6-512",
     color: "linear-gradient(90deg, #999999 0%, #666666 100%)",
   },
+  Fla: {
+    name: "Fla",
+    role: "PM",
+    img: "https://ca.slack-edge.com/T019HJHM7SB-U0412R67ZQS-456ddc36e5e0-512",
+    color: "linear-gradient(90deg, #999999 0%, #666666 100%)",
+  },
+  Purpz: {
+    name: "Purpz",
+    role: "PD",
+    img: "https://ca.slack-edge.com/T019HJHM7SB-U02QYTHAC5V-ca68b3cafa76-512",
+    color: "linear-gradient(90deg, #999999 0%, #666666 100%)",
+  },
+  Sky: {
+    name: "Sky",
+    role: "Data Analyst",
+    img: "https://ca.slack-edge.com/T019HJHM7SB-U035XAY0PPV-7b10652c711c-512",
+    color: "linear-gradient(90deg, #999999 0%, #666666 100%)",
+  },
 };
 
 export function RandomizeCards(props: Props) {
