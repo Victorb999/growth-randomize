@@ -5,8 +5,8 @@
 }
 
 :root {
-  --white: #fff;
-  --black: #000;
+  --white: #000;
+  --black: #fff;
 
   --gray-1: #fafafa;
   --gray-2: #666666;
@@ -19,14 +19,14 @@
 
   // para trocar tema trocar essas cores e imagem
   // ********************************************
-  --primary: #999;
-  --secondary: #000000cc;
-  --tertiary: #333;
+  --primary: #ff006e;
+  --secondary: #bde0fecc;
+  --tertiary: #073b4c;
 
-  --image-background: url("https://pbs.twimg.com/media/DHphBemXUAAFPxS?format=jpg");
+  --image-background: url("https://images5.alphacoders.com/415/415280.jpg");
 
-  --degrade: linear-gradient(90deg, #babaca 0%, #ababab 100%);
-  --degrade-2: linear-gradient(90deg, #abbaba 0%, #787878 100%);
+  --degrade: linear-gradient(90deg, #ffafcc 0%, #ffc8dd 100%);
+  --degrade-2: linear-gradient(90deg, #bde0fe 0%, #a2d2ff 100%);
   // fim do bloco de trocar de tema
   // ********************************************
 

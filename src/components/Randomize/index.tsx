@@ -75,8 +75,8 @@ export function Randomize() {
     </>
   );
 
-  const TITLE_CONTAINER = "Sadness and sorrow randomizer";
-  const BUTTON_LABEL = "tururu";
+  const TITLE_CONTAINER = "Chocolate randomizer";
+  const BUTTON_LABEL = "bora";
 
   return (
     <main>
