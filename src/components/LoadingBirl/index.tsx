@@ -3,10 +3,9 @@ import styles from "./styles.module.scss";
 
 export function LoadingBirl() {
   const gifArray = [
-    "https://media.tenor.com/nnQsqX9g_YYAAAAM/tang916-happy-easter.gif",
-    "https://media.tenor.com/NkoBZb8CJAkAAAAC/puppytalesphotos-puppytales.gif",
-    "https://media.tenor.com/932TKz4sUNcAAAAM/party-simpsons.gif",
-    "https://media.tenor.com/j4F2lymfxD0AAAAd/happy-easter.gif",
+    "https://media.tenor.com/9WFsBeb7sr8AAAAC/loading-gif.gif",
+    "https://media.tenor.com/XasjKGMk_wAAAAAC/load-loading.gif",
+    "https://media.tenor.com/pgO8hZgOW5AAAAAC/loading-bar.gif",
   ];
 
   return (
